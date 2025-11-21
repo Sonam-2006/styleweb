@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Let Rooms | Family & Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <h1 class="logo">🏠 To-Let Services</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#about">Owners</a></li>
+            <li><a href="#extras">Highlights</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#details">Form</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero reveal">
+    <h2 class="animate-text">Premium Rooms for Family & Students</h2>
+    <p class="animate-subtext">Clean • Safe • Affordable • Ventilated • Peaceful Area</p>
+    <a href="#rooms" class="btn hero-btn">Explore Rooms</a>
+</section>
+
+<div class="divider"></div>
+
+<!-- Owners -->
+<section id="about" class="section reveal">
+    <h2 class="section-title">Meet Our Owners</h2>
+    <div class="owners-glass">
+        <p><strong>Mr. Rajlalan</strong> & Mrs. <strong>Shobha Yadav</strong></p>
+        <p><strong>Pankaj</strong> & Mrs. <strong>Rukmani</strong></p>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Highlights -->
+<section id="extras" class="section reveal">
+    <h2 class="section-title">Why Choose Us?</h2>
+
+    <div class="highlight-container">
+
+        <div class="highlight-card">🔐 Secure Area</div>
+        <div class="highlight-card">📶 Free WiFi</div>
+        <div class="highlight-card">💧 24×7 Water</div>
+        <div class="highlight-card">🧹 Clean Rooms</div>
+        <div class="highlight-card">⚡ Backup Electricity</div>
+        <div class="highlight-card">🚗 Parking Space</div>
+        <div class="highlight-card">🎥 CCTV Cameras</div>
+        <div class="highlight-card">🌳 Peaceful Area</div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Rooms -->
+<section id="rooms" class="section reveal">
+
+    <h2 class="section-title">Available Rooms</h2>
+
+    <!-- Filter -->
+    <div class="filter-box">
+        <button class="filter-btn active" onclick="filterRooms('all')">All</button>
+        <button class="filter-btn" onclick="filterRooms('1bhk')">1 BHK</button>
+        <button class="filter-btn" onclick="filterRooms('2bhk')">2 BHK</button>
+        <button class="filter-btn" onclick="filterRooms('pg')">PG Rooms</button>
+    </div>
+
+    <div class="room-container">
+
+        <div class="room-card 1bhk">
+            <span class="badge">Popular</span>
+            <img src="https://source.unsplash.com/400x300/?room,1bhk" alt="1 BHK">
+            <h3>1 BHK Room</h3>
+            <p>Perfect for small families</p>
+            <p class="stars">⭐⭐⭐⭐☆</p>
+            <p class="price">₹3,000 / month</p>
+            <button onclick="contact()" class="btn">Contact Now</button>
+        </div>
+
+        <div class="room-card 2bhk">
+            <span class="badge">Best Choice</span>
+            <img src="https://source.unsplash.com/400x300/?room,2bhk" alt="2 BHK">
+            <h3>2 BHK Room</h3>
+            <p>Spacious & comfortable</p>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p class="price">₹5,000 / month</p>
+            <button onclick="contact()" class="btn">Contact Now</button>
+        </div>
+
+        <div class="room-card pg">
+            <span class="badge">Student Choice</span>
+            <img src="https://source.unsplash.com/400x300/?pg,hostel" alt="PG Room">
+            <h3>PG Room</h3>
+            <p>Meals Included • Best for Students</p>
+            <p class="stars">⭐⭐⭐⭐☆</p>
+            <p class="price">₹4,000 / month</p>
+            <button onclick="contact()" class="btn">Contact Now</button>
+        </div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Google Map -->
+<section id="location" class="section reveal">
+    <h2 class="section-title">Our Location</h2>
+    <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="350"></iframe>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Form -->
+<section id="details" class="section reveal">
+    <h2 class="section-title">Tenant Details Form</h2>
+
+    <form class="form-glass">
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Aadhaar Number" required>
+        <input type="text" placeholder="Phone Number" required>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+</section>
+
+<div class="divider"></div>
+
+<!-- Payment -->
+<section id="payment" class="payment-section reveal">
+    <h2 class="section-title">💳 Online Payment</h2>
+
+    <div class="payment-new-box">
+
+        <div class="pay-left">
+            <h3>Pay Using:</h3>
+            <div class="pay-apps">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Google_Pay_%28GPay%29_Logo.svg/1200px-Google_Pay_%28GPay%29_Logo.svg.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/PhonePe_Logo.svg/800px-PhonePe_Logo.svg.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Paytm_Logo.jpg/1200px-Paytm_Logo.jpg">
+            </div>
+            <p class="payment-number">📱 <strong>9630640562</strong></p>
+            <a href="https://wa.me/919630640562" class="pay-btn">Pay Now</a>
+        </div>
+
+        <div class="pay-right">
+            <h3>Scan & Pay</h3>
+            <div class="qr-box">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=9630640562">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Contact -->
+<section id="contact" class="section reveal">
+    <h2 class="section-title">Contact Us</h2>
+    <p><b>📞 Phone:</b> <a href="tel:+919630640562">+91 9630640562</a></p>
+    <p><b>📍 Address:</b> Anand Colony Near Police Station, Majhgawan</p>
+    <a href="https://wa.me/919630640562" class="btn">WhatsApp Now</a>
+</section>
+
+<!-- Footer -->
+<footer class="madeby">
+    🌷 Designed & Developed By <strong>Sonam Yadav</strong> 🌷
+</footer>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/919630640562" class="whatsapp-float">💬</a>
+
+<script>
+function contact() {
+    window.location.href = "https://wa.me/919630640562";
+}
+
+function filterRooms(type) {
+    let cards = document.querySelectorAll(".room-card");
+    let btns = document.querySelectorAll(".filter-btn");
+
+    btns.forEach(b => b.classList.remove("active"));
+    event.target.classList.add("active");
+
+    cards.forEach(card => {
+        if (type === "all") card.style.display = "block";
+        else card.style.display = card.classList.contains(type) ? "block" : "none";
+    });
+}
+
+// Reveal on scroll
+window.addEventListener("scroll", function () {
+    document.querySelectorAll(".reveal").forEach(el => {
+        let top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 80) {
+            el.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
